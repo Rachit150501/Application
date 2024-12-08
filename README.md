@@ -18,13 +18,22 @@ Set up the database:
 
 Create a MySQL database named testdb (or change the database name in the code).
 Create a table named users with the following columns:
+
+
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     name VARCHAR(100),
+    
     email VARCHAR(100),
+    
     phone VARCHAR(15),
+    
     address TEXT
 );
+
+
 Configure the database connection:
 
 Open the code and update the connection string in the connect() method if needed.
